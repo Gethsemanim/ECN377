@@ -9,24 +9,26 @@
 
 ## (1) The mean, from our own numbers  -- we fill this in together
 ## step 1: put our class poll numbers in a vector -- use c()
-poll <- ______
+Taylor <- c(0,0,0,5)
 ## step 2: add them all up -- use sum()
-______
+sum(Taylor)
 ## step 3: how many are there? (n) -- use length()
-______
+length(Taylor)
 ## step 4: the mean = sum / length ... or just mean()
-______
+mean(Taylor)
+
+install.packages("wooldridge")
 
 ## (2) Real data: dataset$variable
 ## R convention: dataset$variable picks ONE variable (column) out of a dataset --
 ##   e.g. wage1$wage = the "wage" column of wage1, wage1$educ = the "educ" column.
 library(wooldridge); data("wage1")   # 526 workers, 1976
 summary(wage1)                        # snapshot of every variable
-mean(______)                          # TODO: fill in wage1$wage       -- center
-sd(wage1$wage)                        # spread
+mean(wage1$wage)                          # TODO: fill in wage1$wage       -- center
+sd(wage1$wage)                        # spread    sd is standev
 hist(wage1$wage)                      # shape
 cor(wage1$educ, wage1$wage)           # do they move together? (not causation!)
 
 ## ================= PROBLEMS (your turn) =========================
-mean_wage <- ______           # (a) the mean wage        (hint: mean(wage1$wage))
-## (b) Is wage1 cross-section, time-series, or panel?   ANSWER (comment):
+mean_wage <- mean(wage1$wage)           # (a) the mean wage        (hint: mean(wage1$wage))
+## (b) Is wage1 cross-section, time-series, or panel?   ANSWER (comment): #Cross section
