@@ -9,7 +9,7 @@
 
 ## (1) The mean, from our own numbers  -- we fill this in together
 ## step 1: put our class poll numbers in a vector -- use c()
-Taylor <- c(0,0,0,5)
+Taylor <- c(0,0,0,5)   #CTRL enter
 ## step 2: add them all up -- use sum()
 sum(Taylor)
 ## step 3: how many are there? (n) -- use length()
